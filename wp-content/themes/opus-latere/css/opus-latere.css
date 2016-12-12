@@ -1,0 +1,94 @@
+/**
+ * Primary Stylesheet for Opus Latere
+ *
+ * @package     OpusLatere
+ * @since       1.0
+ *
+ * @author      Opus Primus <in.opus.primus@gmail.com>
+ * @copyright   Copyright (c) 2014, Opus Primus
+ *
+ * This file is part of Opus Latere.
+ *
+ * Opus Primus is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License version 2, as published by the
+ * Free Software Foundation.
+ *
+ * You may NOT assume that you can use any other version of the GPL.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details
+ *
+ * You should have received a copy of the GNU General Public License along with
+ * this program; if not, write to:
+ *
+ *      Free Software Foundation, Inc.
+ *      51 Franklin St, Fifth Floor
+ *      Boston, MA  02110-1301  USA
+ *
+ * The license for this software can also likely be found here:
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+/** Left side header layout */
+header {
+	float: left;
+	/** position: fixed; */
+	width: 15em;
+	z-index: 10;
+}
+
+#opus_latere_content_wrapper, .content-wrapper {
+	float: right;
+	width: calc(100% - 15em); /** calculated width = 100% minus header width */
+}
+
+/** End - Left side header layout */
+
+/** Menu adjustments */
+.header-left-side .nav-menu li {
+	float: none;
+}
+
+.header-left-side nav > ul.nav-menu > li.page_item > a,
+.header-left-side .nav-menu > li.menu-item > a {
+	text-align: left;
+}
+
+/** Vertical Menu */
+#vertical-menu ul.nav-menu li:hover ul {
+	position: relative;
+}
+
+#vertical-menu ul.nav-menu li:hover ul ul {
+	position: absolute;
+}
+
+#vertical-menu ul.nav-menu li.page_item_has_children:before,
+#vertical-menu ul.nav-menu li.menu-item-has-children:before {
+	font-family: dashicons, sans-serif;
+	content: "\f167";
+	position: absolute;
+	top: 8px;
+}
+
+#vertical-menu ul.nav-menu li.page_item_has_children a,
+#vertical-menu ul.nav-menu li.menu-item-has-children a {
+	margin-left: 15px;
+}
+
+/** Check for generic mobile device width of 50em / 800px ... add more as needed? */
+@media screen and (max-width: 50em) {
+
+	header {
+		float: none;
+		width: 100%;
+		z-index: 0;
+	}
+
+	#opus_latere_content_wrapper, .content-wrapper {
+		float: none;
+		width: 100%;
+	}
+
+}

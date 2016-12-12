@@ -1,0 +1,228 @@
+/**
+ * Primary Media Queries Stylesheet for Opus Primus
+ *
+ * @package     OpusPrimus
+ * @since       0.1
+ *
+ * @author      Opus Primus <in.opus.primus@gmail.com>
+ * @copyright   Copyright (c) 2012-2016, Opus Primus
+ *
+ * This file is part of Opus Primus.
+ *
+ * Opus Primus is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License version 2, as published by the
+ * Free Software Foundation.
+ *
+ * You may NOT assume that you can use any other version of the GPL.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details
+ *
+ * You should have received a copy of the GNU General Public License along with
+ * this program; if not, write to:
+ *
+ *      Free Software Foundation, Inc.
+ *      51 Franklin St, Fifth Floor
+ *      Boston, MA  02110-1301  USA
+ *
+ * The license for this software can also likely be found here:
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * @version 1.2
+ * @date    March 25, 2013
+ * Sorted out the adaptive layout for screens less than 480px wide
+ *
+ * @version	1.2.5
+ * @date	June 9, 2014
+ * Complete refactoring of the styles for better responsiveness
+ * Fixed white space on right side of iPhone displays
+ *
+ * @version	1.3
+ * @date	August 26, 2014
+ * Removed duplicate definitions
+ */
+
+/** ------------------------------------------------------------------------- */
+
+/** Smartphones (portrait and landscape) ------------------------------------ */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+	/* Styles */
+	/* Copy @media only screen and (min-width : 321px) */
+	html,
+	body {
+		width: 100%;
+		overflow-x: hidden;
+	}
+
+	body {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.right-sidebar .the-loop,
+	.right-sidebar .first-sidebar,
+	.right-sidebar .second-sidebar,
+	.blog-style .the-loop,
+	.blog-style .first-sidebar,
+	.blog-style .second-sidebar {
+		width: 96%;
+	}
+
+	.blog-style .first-sidebar,
+	.blog-style .second-sidebar {
+		left: 52%;
+	}
+
+}
+
+/** Smartphones (landscape) ------------------------------------------------- */
+@media only screen and (min-width: 321px) {
+	/* Styles */
+	html,
+	body {
+		overflow-x: hidden;
+	}
+
+	body {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.right-sidebar .the-loop,
+	.right-sidebar .first-sidebar,
+	.right-sidebar .second-sidebar,
+	.blog-style .the-loop,
+	.blog-style .first-sidebar,
+	.blog-style .second-sidebar {
+		width: 96%;
+	}
+
+	.blog-style .first-sidebar,
+	.blog-style .second-sidebar {
+		left: 52%;
+	}
+
+}
+
+/** Smartphones (portrait) -------------------------------------------------- */
+@media only screen and (max-width: 320px) {
+	/* Styles */
+	html,
+	body {
+		width: 100%;
+		overflow-x: hidden;
+	}
+
+	body {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.right-sidebar .the-loop,
+	.right-sidebar .first-sidebar,
+	.right-sidebar .second-sidebar,
+	.blog-style .the-loop,
+	.blog-style .first-sidebar,
+	.blog-style .second-sidebar {
+		width: 96%;
+	}
+
+	.blog-style .first-sidebar,
+	.blog-style .second-sidebar {
+		left: 52%;
+	}
+
+}
+
+/** iPhone 4 ---------------------------------------------------------------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+	/* Styles */
+	html,
+	body {
+		width: 100%;
+		overflow-x: hidden;
+	}
+
+	body {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.right-sidebar .the-loop,
+	.right-sidebar .first-sidebar,
+	.right-sidebar .second-sidebar,
+	.blog-style .the-loop,
+	.blog-style .first-sidebar,
+	.blog-style .second-sidebar {
+		width: 96%;
+	}
+
+	.blog-style .first-sidebar,
+	.blog-style .second-sidebar {
+		left: 52%;
+	}
+
+}
+
+/** iPads (portrait and landscape) ------------------------------------------ */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	/* Styles */
+}
+
+/** iPads (landscape) ------------------------------------------------------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+	/* Styles */
+}
+
+/** iPads (portrait) -------------------------------------------------------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+	/* Styles */
+}
+
+/** iPad 3 ------------------------------------------------------------------ */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+	/* Styles */
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+	/* Styles */
+}
+
+/** Desktops and laptops ---------------------------------------------------- */
+@media only screen  and (min-width: 1224px) {
+	/* Styles */
+	body {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.right-sidebar .the-loop {
+		width: 71%;
+	}
+
+	.blog-style .the-loop {
+		width: 46%;
+	}
+
+	.right-sidebar .first-sidebar,
+	.right-sidebar .second-sidebar {
+		width: 21%;
+	}
+
+	.blog-style .first-sidebar {
+		width: 21%;
+		left: 56%;
+	}
+
+	.blog-style .second-sidebar {
+		width: 21%;
+		left: 60%;
+	}
+
+}
+
+/** Large screens ----------------------------------------------------------- */
+@media only screen  and (min-width: 1824px) {
+	/* Styles */
+}

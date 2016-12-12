@@ -1,0 +1,20 @@
+=== Opus Primus Theme Support ===
+
+Last reviewed February 8, 2014
+
+== Internet Addresses ==
+
+* WordPress:        http://wordpress.org/extend/themes/opus-primus
+* Home:             http://opusprimus.com
+
+== Email Addresses ==
+
+* Main:             in.opus.primus@gmail.com
+* Lead Developer:   edward.caissie@gmail.com
+
+== Helpful Advise and Information ==
+
+* Install the BNS Support plugin and copy its output into your support request
+(http://wordpress.org/extend/plugins/bns-support)
+* List steps to reproduce the issue
+* Please be patient
